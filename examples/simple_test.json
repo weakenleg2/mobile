@@ -1,0 +1,61 @@
+{
+  "Map": "squigles_small.yaml",
+  "save_path" : ".",
+  "time_step": 0.5,
+  "agents": [
+    {"id": 0,
+      "location_noise": 0.01,
+      "speed": 1.3,
+      "speed_noise": 0.1
+    },
+    {"id": 1,
+      "location_noise": 0.01,
+      "speed": 0.7,
+      "speed_noise": 0.1
+    },
+    {"id": 2,
+      "location_noise": 0.05,
+      "speed": 1.7,
+      "speed_noise": 0.2
+    },
+    {"id": 3,
+      "location_noise": 0.02,
+      "speed": 0.5,
+      "speed_noise": 0.3
+    }
+  ],
+  "paths": [
+    {"id": 0,
+      "agents": [0,1],
+      "runs": 100,
+      "tension": 0.1,
+      "start": [12,9],
+      "end": [84,75]
+    },
+    {"id": 1,
+      "agents": [0,1,2,3],
+      "runs": 100,
+      "tension": 0.1
+    },
+    {"id": 2,
+      "agents": [0,1,3],
+      "runs": 100,
+      "tension": 0.1
+    },
+    {"id": 3,
+      "agents": [0,2,3],
+      "runs": 50,
+      "tension": 0.1
+    },
+    {"id": 4,
+      "agents": [0,2,3],
+      "runs": 10,
+      "tension": 0.1
+    },
+    {"id": 5,
+      "agents": [1,2,3],
+      "runs": 80,
+      "tension": 0.1
+    }
+  ]
+}
